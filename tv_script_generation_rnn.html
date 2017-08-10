@@ -11905,7 +11905,7 @@ Return these dictionaries in the following tuple (vocab_to_int, int_to_vocab)</l
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11969,7 +11969,7 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">token_lookup</span><span class="p">():</span>
@@ -12020,7 +12020,7 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Preprocess Training, Validation, and Testing Data</span>
@@ -12044,7 +12044,7 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">helper</span>
@@ -12079,7 +12079,7 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">distutils.version</span> <span class="k">import</span> <span class="n">LooseVersion</span>
@@ -12141,7 +12141,7 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_inputs</span><span class="p">():</span>
@@ -12193,7 +12193,7 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">num_layers</span> <span class="o">=</span> <span class="mi">2</span>
@@ -12241,7 +12241,7 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_embed</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">):</span>
@@ -12293,7 +12293,7 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_rnn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">inputs</span><span class="p">):</span>
@@ -12341,13 +12341,13 @@ Implement the function token_lookup to return a dict that will be used to tokeni
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_nn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">,</span> <span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">):</span>
     <span class="n">embed</span> <span class="o">=</span> <span class="n">get_embed</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">)</span>
     <span class="n">outputs</span><span class="p">,</span> <span class="n">final_state</span> <span class="o">=</span> <span class="n">build_rnn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">embed</span><span class="p">)</span>
-    <span class="n">logits</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">fully_connected</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">activation_fn</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">)</span>
+    <span class="n">logits</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">fully_connected</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">activation_fn</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">logits</span><span class="p">,</span> <span class="n">final_state</span>
 
 <span class="n">tests</span><span class="o">.</span><span class="n">test_build_nn</span><span class="p">(</span><span class="n">build_nn</span><span class="p">)</span>
@@ -12400,7 +12400,7 @@ If you can't fill the last batch with enough data, drop the last batch. For exmp
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_batches</span><span class="p">(</span><span class="n">int_text</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_length</span><span class="p">):</span>
@@ -12469,7 +12469,7 @@ If you can't fill the last batch with enough data, drop the last batch. For exmp
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
@@ -12479,11 +12479,11 @@ If you can't fill the last batch with enough data, drop the last batch. For exmp
 <span class="c1"># RNN Size</span>
 <span class="n">rnn_size</span> <span class="o">=</span> <span class="mi">256</span>
 <span class="c1"># Embedding Dimension Size</span>
-<span class="n">embed_dim</span> <span class="o">=</span> <span class="mi">256</span>
+<span class="n">embed_dim</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="c1"># Sequence Length</span>
 <span class="n">seq_length</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="c1"># Learning Rate</span>
-<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.001</span>
+<span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.005</span>
 <span class="c1"># Show stats for every n number of batches</span>
 <span class="n">show_every_n_batches</span> <span class="o">=</span> <span class="mi">300</span>
 
@@ -12508,7 +12508,7 @@ If you can't fill the last batch with enough data, drop the last batch. For exmp
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_graph</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
@@ -12554,7 +12554,7 @@ If you can't fill the last batch with enough data, drop the last batch. For exmp
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">batches</span> <span class="o">=</span> <span class="n">get_batches</span><span class="p">(</span><span class="n">int_text</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_length</span><span class="p">)</span>
@@ -12599,28 +12599,28 @@ If you can't fill the last batch with enough data, drop the last batch. For exmp
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Epoch   0 Batch    0/69   train_loss = 8.822
-Epoch   4 Batch   24/69   train_loss = 6.098
-Epoch   8 Batch   48/69   train_loss = 6.267
-Epoch  13 Batch    3/69   train_loss = 6.078
-Epoch  17 Batch   27/69   train_loss = 6.153
-Epoch  21 Batch   51/69   train_loss = 6.079
-Epoch  26 Batch    6/69   train_loss = 5.622
-Epoch  30 Batch   30/69   train_loss = 5.273
-Epoch  34 Batch   54/69   train_loss = 5.082
-Epoch  39 Batch    9/69   train_loss = 5.023
-Epoch  43 Batch   33/69   train_loss = 5.059
-Epoch  47 Batch   57/69   train_loss = 4.593
-Epoch  52 Batch   12/69   train_loss = 4.591
-Epoch  56 Batch   36/69   train_loss = 4.588
-Epoch  60 Batch   60/69   train_loss = 4.561
-Epoch  65 Batch   15/69   train_loss = 4.370
-Epoch  69 Batch   39/69   train_loss = 4.284
-Epoch  73 Batch   63/69   train_loss = 4.138
-Epoch  78 Batch   18/69   train_loss = 3.910
-Epoch  82 Batch   42/69   train_loss = 3.942
-Epoch  86 Batch   66/69   train_loss = 3.872
-Epoch  91 Batch   21/69   train_loss = 3.781
-Epoch  95 Batch   45/69   train_loss = 3.811
+Epoch   4 Batch   24/69   train_loss = 5.273
+Epoch   8 Batch   48/69   train_loss = 4.743
+Epoch  13 Batch    3/69   train_loss = 3.944
+Epoch  17 Batch   27/69   train_loss = 3.497
+Epoch  21 Batch   51/69   train_loss = 2.968
+Epoch  26 Batch    6/69   train_loss = 2.605
+Epoch  30 Batch   30/69   train_loss = 2.277
+Epoch  34 Batch   54/69   train_loss = 1.842
+Epoch  39 Batch    9/69   train_loss = 1.552
+Epoch  43 Batch   33/69   train_loss = 1.266
+Epoch  47 Batch   57/69   train_loss = 1.132
+Epoch  52 Batch   12/69   train_loss = 0.876
+Epoch  56 Batch   36/69   train_loss = 0.658
+Epoch  60 Batch   60/69   train_loss = 0.648
+Epoch  65 Batch   15/69   train_loss = 0.626
+Epoch  69 Batch   39/69   train_loss = 0.526
+Epoch  73 Batch   63/69   train_loss = 0.536
+Epoch  78 Batch   18/69   train_loss = 0.492
+Epoch  82 Batch   42/69   train_loss = 0.772
+Epoch  86 Batch   66/69   train_loss = 0.542
+Epoch  91 Batch   21/69   train_loss = 0.429
+Epoch  95 Batch   45/69   train_loss = 0.421
 Model Trained and Saved
 </pre>
 </div>
@@ -12642,7 +12642,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Save parameters for checkpoint</span>
@@ -12665,7 +12665,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -12701,7 +12701,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_tensors</span><span class="p">(</span><span class="n">loaded_graph</span><span class="p">):</span>
@@ -12746,7 +12746,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pick_word</span><span class="p">(</span><span class="n">probabilities</span><span class="p">,</span> <span class="n">int_to_vocab</span><span class="p">):</span>
@@ -12786,7 +12786,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gen_length</span> <span class="o">=</span> <span class="mi">200</span>
@@ -12843,17 +12843,20 @@ Model Trained and Saved
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Restoring parameters from ./save
-moe_szyslak:(to moe) hey, no. i think i could, uh, not a little.(to moe) hey, no one ever...(to moe) i don&#39;t know.
+moe_szyslak:(singing, points) yeah well the sign still&#34; eightball&#34;!
+homer_simpson: wow,(concerned) what happened.&#34;
+homer_simpson: when i look at you and i am no longer smells, a little bit?
+barney_gumble: no, i like are it&#39;s time, no, uh, you are... moe_szyslak: ahh, kiss this bottle in the car, right.
+moe_szyslak: yeah, sorry principal here.
+moe_szyslak:(sing) si-lent story, but i didn&#39;t eat mr.
+moe_szyslak:(looking at homer) oh, moe, i&#39;ve never find out on me.
+carl_carlson: well, who could be afraid the man?
+homer_simpson:(tipsy) i&#39;m an alcoholic you didn&#39;t win with the place!
+moe_szyslak: we can just do to get you around the other side by the new beloved, moe. this guy you&#39;ve got a step election, moe.
+moe_szyslak: whoa, whoa. yeah!(belch)
+homer_simpson: don&#39;t worry. what happened?
+homer_simpson:(gasps) stop me, moe.
 
-
-moe_szyslak:(to moe) i was just all a best story?(to moe) i don&#39;t think if i he wife gonna do to the wife as not on a new way to tonight.
-moe_szyslak: eh, you gotta do it. i got a wife no&#34; i&#39;m gonna have a little.(to moe) i don&#39;t think i can.
-moe_szyslak:(to moe) hey, i don&#39;t have to be a car.
-moe_szyslak: hey, no. i think it was...(to moe) no one, or now is.
-moe_szyslak:(to moe) i was not all a wife is one of.
-homer_simpson: i don&#39;t know what you do.
-moe_szyslak:(to moe) i was just so as gonna love you.
-moe_szyslak:(to homer) i was just
 </pre>
 </div>
 </div>
